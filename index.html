@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aarushi | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="logo">Aarushi.</span>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Aarushi</h1>
+      <h2 class="hero-title">B.Tech CSE Student & Web Developer</h2>
+      <p class="hero-summary">
+        I build clean, functional web experiences. Passionate about DSA, frontend development, and solving real problems with code.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/aarushi-mittal-aarushi" target="_blank" class="social-link">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/aarushi-024" target="_blank" class="social-link">GitHub</a>
+        <span class="dot">·</span>
+        <a href="https://leetcode.com/u/Aarushi_024/" target="_blank" class="social-link">LeetCode</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-placeholder">A</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm Aarushi, a Computer Science Engineering student at <strong>Maharishi Markandeshwar (Deemed to be) University</strong>, Haryana, India. Currently in my first year (2024–2028) with a CGPA of <strong>7.86/10</strong>.
+          </p>
+          <p>
+            My journey into tech started with a curiosity for how things work on the web. Since then, I've worked on Python applications, JavaScript-based tools, and I'm currently sharpening my skills in DSA and web development through hands-on projects and internships.
+          </p>
+          <p>
+            Outside of coding, I enjoy participating in hackathons, contributing to open-source, and exploring new technologies. I believe in learning by building — every project teaches me something new.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <span class="card-label">Degree</span>
+            <span class="card-value">B.Tech CSE</span>
+          </div>
+          <div class="info-card">
+            <span class="card-label">University</span>
+            <span class="card-value">MM University</span>
+          </div>
+          <div class="info-card">
+            <span class="card-label">CGPA</span>
+            <span class="card-value">7.86 / 10</span>
+          </div>
+          <div class="info-card">
+            <span class="card-label">Batch</span>
+            <span class="card-value">2024 – 2028</span>
+          </div>
+          <div class="info-card">
+            <span class="card-label">Location</span>
+            <span class="card-value">Haryana, India</span>
+          </div>
+          <div class="info-card">
+            <span class="card-label">Languages</span>
+            <span class="card-value">English, Hindi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="coursework">
+        <h3 class="sub-title">Relevant Coursework</h3>
+        <div class="course-tags">
+          <span class="tag">Programming Fundamentals</span>
+          <span class="tag">Object-Oriented Programming</span>
+          <span class="tag">Data Structures & Algorithms</span>
+          <span class="tag">Web Technologies</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">Operating Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-category">Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Web Technologies</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Tools & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Google Cloud Platform</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Core Concepts</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">OOP</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Data Structures</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Class 10 Marksheet Generator</h3>
+            <span class="project-tech">Python</span>
+          </div>
+          <ul class="project-points">
+            <li>Developed a Python application to generate student marksheets with input validation and error handling for multiple student records</li>
+            <li>Handled edge cases and ensured accurate result computation using modular code design</li>
+            <li>Applied basic object-oriented principles to organize student data and grade calculation logic</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/aarushi-024" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Stopwatch Web App</h3>
+            <span class="project-tech">HTML · CSS · JS</span>
+          </div>
+          <ul class="project-points">
+            <li>Built a fully functional stopwatch with Start, Pause, and Reset controls using JavaScript timing functions</li>
+            <li>Implemented a lap tracking feature to record and display multiple lap times</li>
+            <li>Designed a clean, responsive UI with accurate time display down to milliseconds</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/aarushi-024" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Tic-Tac-Toe Game</h3>
+            <span class="project-tech">HTML · CSS · JS</span>
+          </div>
+          <ul class="project-points">
+            <li>Developed an interactive Tic-Tac-Toe game with both vs AI and 2-player modes</li>
+            <li>Implemented an unbeatable AI opponent using the Minimax algorithm</li>
+            <li>Added score tracking, win highlighting, and a responsive dark-themed UI</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/aarushi-024" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Responsive Landing Page</h3>
+            <span class="project-tech">HTML · CSS · JS</span>
+          </div>
+          <ul class="project-points">
+            <li>Designed and built a fully responsive landing page that adapts seamlessly across all screen sizes</li>
+            <li>Implemented smooth scroll navigation, hover animations, and a mobile hamburger menu</li>
+            <li>Focused on clean UI design with consistent typography and layout structure</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/aarushi-024" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement-item">
+          <span class="achieve-icon">☁️</span>
+          <div>
+            <h4>16 Google Cloud GenAI Skill Badges</h4>
+            <p>Earned by completing guided labs on Google Cloud Platform covering Generative AI fundamentals</p>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <span class="achieve-icon">🏆</span>
+          <div>
+            <h4>Intra-College Hackathon — Team Leader</h4>
+            <p>Led a team in an intra-college hackathon, coordinating development and presenting the final solution</p>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <span class="achieve-icon">🎓</span>
+          <div>
+            <h4>Infosys Springboard Virtual Internship</h4>
+            <p>Completed a virtual internship program covering software development concepts and industry practices</p>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <span class="achieve-icon">💡</span>
+          <div>
+            <h4>GDG Campus Solution Challenge</h4>
+            <p>Participated in the Google Developer Groups Campus Solution Challenge powered by Hack2Skill</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">I'm open to internship opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:a24aarushi@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span>a24aarushi@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.co7m/in/aarushi-mittal-aarushi" target="_blank" class="contact-card">
+          <span class="contact-icon">🔗</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/aarushi-024" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <strong>Aarushi</strong> · 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
